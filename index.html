@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.webp">
+    <script src="https://kit.fontawesome.com/858b3d16a1.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="bg-[#fbf7ed] flex text-[#42474c] py-2 sticky top-0">
+        <div class="nav-logo mx-[5%]">
+            <img src="./assets/logo.png" alt="logo" class="h-[65px] w-[121px]">
+        </div>
+        <div class="flex w-[80%] justify-between mr-[5%]">
+            <ul class="flex gap-10 text-[17px] font-thin items-center">
+                <li class="hover:text-black hover:cursor-pointer">Start <i class="fa-solid fa-angle-down text-slate-500 hover:text-black" style="font-size: 13px;"></i></li>
+                <li class="hover:text-black hover:cursor-pointer">Sell <i class="fa-solid fa-angle-down text-slate-500 hover:text-black" style="font-size: 13px;"></i></li>
+                <li class="hover:text-black hover:cursor-pointer">Market <i class="fa-solid fa-angle-down text-slate-500 hover:text-black" style="font-size: 13px;"></i></li>
+                <li class="hover:text-black hover:cursor-pointer">Manage <i class="fa-solid fa-angle-down text-slate-500 hover:text-black" style="font-size: 13px;"></i></li>
+            </ul>
+            <ul class="flex gap-10 items-center">
+                <li class="hover:text-black hover:cursor-pointer">Pricing</li>
+                <li class="hover:text-black hover:cursor-pointer">Learn <i class="fa-solid fa-angle-down text-slate-500 hover:text-black" style="font-size: 13px;"></i></li>
+                <li class="hover:text-black hover:cursor-pointer">Log in</li>
+                <li class="bg-[#008060] text-white px-[22px] py-[11px] rounded-md shadow-[0_0px_15px_0px_rgba(0,0,0,0.3)] hover:shadow-[0_0px_25px_0px_rgba(0,0,0,0.3)] hover:bg-[#004c3f] hover:cursor-pointer">Try for free</li>
+            </ul>
+        </div>
+        
+    </nav>
+
+    <div class="sell-india-video">
+        <video autoplay muted loop height="450px" width="650px" id="videoPlayer1">
+            <source src="./assets/easiest_way_to_sell_in_india.mp4">
+        </video>
+        <div class="play-btn">
+            <i class="fa-solid fa-pause " id="buttonPlayPause-india" onclick="videoPlayPause('videoPlayer1','buttonPlayPause-india')"></i>
+        </div>
+        
+    </div>
+    
+    <div class="sell-everywhere-video">
+        <video autoplay muted loop height="450px" width="650px" id="videoPlayer2">
+            <source src="./assets/sell_everywhere.webm">
+        </video>
+        <div class="play-btn">
+            <i class="fa-solid fa-pause " id="buttonPlayPause-everywhere" onclick="videoPlayPause('videoPlayer2','buttonPlayPause-everywhere')"></i>
+        </div>
+        
+    </div>
+    
+    
+</body>
+<script>
+    function videoPlayPause(videoName,btnId){
+        var v = document.getElementById(videoName);
+        let but=document.getElementById(btnId);
+        if(but.classList.contains("fa-play")){
+                v.play();
+                but.classList.add('fa-pause');
+                but.classList.remove('fa-play');
+                
+            }
+            else{
+                v.pause();
+                but.classList.add('fa-play');
+                but.classList.remove('fa-pause');
+            }
+        // but.addEventListener('click', function(e){
+        //     if(but.classList.contains("fa-play")){
+        //         v.play();
+        //         but.classList.add('fa-pause');
+        //         but.classList.remove('fa-play');
+                
+        //     }
+        //     else{
+        //         v.pause();
+        //         but.classList.add('fa-play');
+        //         but.classList.remove('fa-pause');
+        //     }
+        // })
+    }
+	
+</script>
+</html>
