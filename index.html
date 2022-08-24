@@ -14,6 +14,10 @@
             margin: 0;
             font-family: sans-serif;
         }
+        .move-arrow i{transition: transform 0.5s ease-in-out;}
+        .move-arrow:hover i{
+            transform: translateX(5px);
+        }
     </style>
 </head>
 <body>
@@ -23,7 +27,7 @@
             <img src="./assets/logo.png" alt="logo" class="h-[65px] w-[121px]">
         </div>
         <div class="flex w-[80%] justify-between mr-[5%]">
-            <ul class="flex gap-10 text-[17px] font-thin items-center">
+            <ul class="flex gap-10 text-[17px] font-normal items-center">
                 <li class="hover:text-black hover:cursor-pointer">Start <i class="fa-solid fa-angle-down text-slate-500 hover:text-black" style="font-size: 13px;"></i></li>
                 <li class="hover:text-black hover:cursor-pointer">Sell <i class="fa-solid fa-angle-down text-slate-500 hover:text-black" style="font-size: 13px;"></i></li>
                 <li class="hover:text-black hover:cursor-pointer">Market <i class="fa-solid fa-angle-down text-slate-500 hover:text-black" style="font-size: 13px;"></i></li>
@@ -35,29 +39,103 @@
                 <li class="hover:text-black hover:cursor-pointer">Log in</li>
                 <li class="bg-[#008060] text-white px-[22px] py-[11px] rounded-md shadow-[0_0px_15px_0px_rgba(0,0,0,0.3)] hover:shadow-[0_0px_25px_0px_rgba(0,0,0,0.3)] hover:bg-[#004c3f] hover:cursor-pointer">Try for free</li>
             </ul>
-        </div>
-        
+        </div>     
     </nav>
 
-    <div class="sell-india-video">
-        <video autoplay muted loop height="450px" width="650px" id="videoPlayer1">
-            <source src="./assets/easiest_way_to_sell_in_india.mp4">
-        </video>
-        <div class="play-btn">
-            <i class="fa-solid fa-pause " id="buttonPlayPause-india" onclick="videoPlayPause('videoPlayer1','buttonPlayPause-india')"></i>
+    <div class="sell-in-india bg-[#fbf7ed] flex md:flex-row flex-col md:gap-40 px-[5%] md:py-24">
+        <div class="md:w-[40%]">
+            <h1 class="text-[#004c3f] font-bold md:text-[48px] tracking-[-0.028125em] leading-[1.375] mb-[28px]">The easiest way to sell online in India</h1>
+            <p class="text-[#6b7177] text-[20px] mb-[28px]">Try one of the most powerful platforms on the market for free. No technical knowledge needed.</p>
+            <input type="text" name="email" placeholder="Enter your email address" class="border-[1px] border-[#6b7177] w-[400px] h-[51px] px-[15px] py-[16px] rounded-md m-[8px] mt-0 placeholder:font-sans focus:outline-[#008060]"> <button class="bg-[#008060] text-white px-[22px] py-[13px] rounded-md shadow-[0_0px_15px_0px_rgba(0,0,0,0.3)] hover:shadow-[0_0px_25px_0px_rgba(0,0,0,0.3)] hover:bg-[#004c3f]">Try for free</button>
+            <p class="text-[12px] pt-4">Try Shopify free for 14 days, no credit card required. By entering your email, you agree to receive marketing emails from Shopify.</p>
         </div>
-        
+        <div class="sell-india-video flex items-end">
+            <video autoplay muted loop height="450px" width="650px" id="videoPlayer1">
+                <source src="./assets/easiest_way_to_sell_in_india.mp4">
+            </video>
+            <div class="play-btn hover:cursor-pointer">
+                <i class="fa-solid fa-pause" id="buttonPlayPause-india" onclick="videoPlayPause('videoPlayer1','buttonPlayPause-india')"></i>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="business-online bg-[#004c3f] text-white md:py-24 px-[5%]">
+        <h1 class="text-[40px] mb-[12px]">Bring your business online</h1>
+        <div class="flex md:flex-row flex-col md:justify-between md:items-center">
+            <p class="font-light text-[16px] mb-[16px] ">Create an ecommerce website backed by powerful tools that help you find customers, drive sales, and manage your day-to-day.</p>
+            <button class="move-arrow text-[16px] mb-[16px] font-bold">Explore more examples <i class="fa-solid fa-arrow-right-long" style="font-size: 13px;"></i></button>
+        </div>
+        <div class="my-10 flex justify-between flex-wrap">
+            <div>
+                <img src="./assets/Food&Drink_BlueTokai.webp" alt="" class="w-[254px]">
+                <h1 class="mt-3 text-[14px]">FOOD & DRINK</h1>
+                <p class="text-[16px] mt-1">Blue Tokai</p>
+            </div>
+            <div>
+                <img src="./assets/Jwelery_Quirksmith.webp" alt="" class="w-[254px]">
+                <h1 class="mt-3 text-[14px]">JEWELRY</h1>
+                <p class="text-[16px] mt-1">Quirksmith</p>
+            </div>
+            <div>
+                <img src="./assets/Electronics_Crossbeats.webp" alt="" class="w-[254px]">
+                <h1 class="mt-3 text-[14px]">ELECTRONICS</h1>
+                <p class="text-[16px] mt-1">Crossbeats</p>
+            </div>
+            <div>
+                <img src="./assets/Beauty_Mcaffeine.webp" alt="" class="w-[254px]">
+                <h1 class="mt-3 text-[14px]">BEAUTY</h1>
+                <p class="text-[16px] mt-1">Mcaffeine</p>
+            </div>
+            <div>
+                <img src="./assets/Fashion_Bunaai.webp" alt="" class="w-[254px]">
+                <h1 class="mt-3 text-[14px]">FASHION</h1>
+                <p class="text-[16px] mt-1">Bunaai</p>
+            </div>
+        </div>
+        <div class="md:mt-28 ">
+            <h1 class="text-[30px]">Take the best path forward</h1>
+            <div class="my-16 flex md:flex-row md:justify-between flex-col flex-wrap">
+                <div class="w-[306px]">
+                    <img src="./assets/icon01.png" alt="" class="h-[36px] w-[36px]">
+                    <h3 class="text-[18px] mt-6">Start an online business</h3>
+                    <p class="text-[16px] mt-4 font-light">Create a business, whether you’ve got a fresh idea or are looking for a new way to make money.</p>
+                </div>
+                <div class="w-[306px]">
+                    <img src="./assets/icon02.png" alt="" class="h-[36px] w-[36px]">
+                    <h3 class="text-[18px] mt-6">Move your business online</h3>
+                    <p class="text-[16px] mt-4 font-light">Turn your retail store into an online store and keep serving customers without missing a beat.</p>
+                </div>
+                <div class="w-[306px]">
+                    <img src="./assets/icon03.png" alt="" class="h-[36px] w-[36px]">
+                    <h3 class="text-[18px] mt-6">Switch to Shopify</h3>
+                    <p class="text-[16px] mt-4 font-light">Bring your business to Shopify, no matter which ecommerce platform you’re currently using.</p>
+                </div>
+                <div class="w-[306px]">
+                    <img src="./assets/icon04.png" alt="" class="h-[36px] w-[36px]">
+                    <h3 class="text-[18px] mt-6">Hire a Shopify expert</h3>
+                    <p class="text-[16px] mt-4 font-light">Get set up with the help of a trusted freelancer or agency from the Shopify Experts Marketplace.</p>
+                </div>
+            </div>
+        </div>
     </div>
     
-    <div class="sell-everywhere-video">
-        <video autoplay muted loop height="450px" width="650px" id="videoPlayer2">
-            <source src="./assets/sell_everywhere.webm">
-        </video>
-        <div class="play-btn">
-            <i class="fa-solid fa-pause " id="buttonPlayPause-everywhere" onclick="videoPlayPause('videoPlayer2','buttonPlayPause-everywhere')"></i>
+    <div class="sell-everywhere">
+        <div>
+
         </div>
-        
+
+        <div class="sell-everywhere-video flex items-end">
+            <video autoplay muted loop height="450px" width="650px" id="videoPlayer2">
+                <source src="./assets/sell_everywhere.webm">
+            </video>
+            <div class="play-btn hover:cursor-pointer">
+                <i class="fa-solid fa-pause " id="buttonPlayPause-everywhere" onclick="videoPlayPause('videoPlayer2','buttonPlayPause-everywhere')"></i>
+            </div>        
+        </div>
     </div>
+    
+    
     
     
 </body>
