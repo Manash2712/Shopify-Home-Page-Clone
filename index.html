@@ -14,9 +14,12 @@
             margin: 0;
             font-family: sans-serif;
         }
-        .move-arrow i{transition: transform 0.5s ease-in-out;}
+        .move-arrow i, .to-top i{transition: transform 0.5s ease-in-out;}
         .move-arrow:hover i{
             transform: translateX(5px);
+        }
+        .to-top:hover i{
+            transform: translateY(-5px);
         }
     </style>
 </head>
@@ -141,7 +144,7 @@
                 </div>        
             </div>
         </div>
-        <div class="flex md:flex-row justify-evenly items-center">
+        <div class="market-business flex md:flex-row justify-evenly items-center">
             <div class="md:w-[35%]">
                 <h1 class="text-[30px] text-[#212326]">Market your business</h1>
                 <p class="text-[16px] text-[#6b7177] font-light mt-4">Take the guesswork out of marketing with built-in tools that help you create, execute, and analyze digital marketing campaigns.</p>
@@ -151,7 +154,7 @@
                 <img src="./assets/market_your_business.webp" alt="" class="w-[640px] h-[514px]">
             </div>
         </div>
-        <div class="flex md:flex-row-reverse justify-evenly items-center">
+        <div class="manage-everything flex md:flex-row-reverse justify-evenly items-center">
             <div class="md:w-[35%]">
                 <h1 class="text-[30px] text-[#212326]">Manage everything</h1>
                 <p class="text-[16px] text-[#6b7177] font-light mt-4">Gain the insights you need to grow—use a single dashboard to manage orders, shipping, and payments anywhere you go.</p>
@@ -163,7 +166,7 @@
         </div>
     </div>
     
-    <div class="bg-[#f3fcf4] px-[5%] py-24">
+    <div class="explore-more-india bg-[#f3fcf4] px-[5%] py-24">
         <h1 class="text-[#004c3f] text-[30px]">Explore more from Shopify in India</h1>
         <div class="flex md:flex-row md:justify-between flex-col mt-10">
             <div class="bg-white p-8 md:w-[50%] md:pr-[180px]">
@@ -178,9 +181,82 @@
         </div>
     </div>
     
+    <div class="independent-business mt-12 mx-[10%]">
+        <h1 class="text-[#212326] text-[28px] lg:w-[40%]">Empowering independent business owners everywhere</h1>
+        <p class="mt-5 text-[24px] lg:w-[60%] text-[#222325]">Millions of businesses in <span class="text-[24px] font-semibold">175 countries</span> around the world have made over <span class="text-[24px] font-semibold">$496 billion USD</span> in sales using Shopify.</p>
+        <button class="move-arrow text-[16px] font-bold text-[#004c3f] mt-8">Learn more about Shopify <i class="fa-solid fa-arrow-right-long" style="font-size: 13px;"></i></button>
+        <div class="w-[927px] h-[927px] mx-auto mt-5">
+            <img src="./assets/globe1.png" alt="" class="w-[100%] h-[100%]">
+        </div>
+    </div>
     
+    <div class="flex mx-[8%] mt-28">
+        <div class="w-[50%]">
+            <img src="./assets/alicia.jpg" alt="" class="h-[667px]">
+        </div>
+        <div class="w-[50%] bg-[#002e25] text-white">
+            <p class="px-[15%] text-center pt-20 text-[30px]">“Shopify was my knight in shining armor when I exhausted every other possibility of getting my online store up and running. It was stunningly easy to use, with more features and plug-ins that I didn’t even know I wanted.”</p>
+            <img src="./assets/alicia-souza.webp" alt="" class="mx-auto mt-12 h-[70px]">
+            <p class="mt-8 text-center text-[20px]">Alicia | Alicia Souza</p>
+        </div>
+    </div>
+
+    <div class="flex mx-[7%] justify-between flex-wrap my-20">
+        <div>
+            <img src="./assets/bajaao.png" alt="">
+        </div>
+        <div>
+            <img src="./assets/jofnjacobs.png" alt="">
+        </div>
+        <div>
+            <img src="./assets/kylie.png" alt="">
+        </div>
+        <div>
+            <img src="./assets/nush.webp" alt="">
+        </div>
+        <div>
+            <img src="./assets/yogabar.webp" alt="">
+        </div>
+        <div>
+            <img src="./assets/starstruck.png" alt="">
+        </div>
+        <div>
+            <img src="./assets/mcaffeine.png" alt="">
+        </div>
+    </div>
     
-    
+    <div class="help flex bg-[#fbf7ed]">
+        <div class="md:w-[50%] pl-[5%] pt-24">
+            <h1 class="text-[#212326] text-[40px] md:w-[60%]">Get the help you need, every step of the way</h1>
+            <div class="flex md:flex-row flex-col flex-wrap mt-12 gap-y-10">
+                <div class="w-[289px]">
+                    <h3 class="text-[18px] text-[#212326]">Shopify support</h3>
+                    <p class="text-[16px] text-[#6b7177] mt-4">Contact support 24/7, whether you’re troubleshooting issues or looking for business advice.</p>
+                    <button class="move-arrow text-[16px] font-bold text-[#004c3f] mt-4">Contact support <i class="fa-solid fa-arrow-right-long" style="font-size: 13px;"></i></button>
+                </div>
+                <div class="w-[289px]">
+                    <h3 class="text-[18px] text-[#212326]">Shopify App Store</h3>
+                    <p class="text-[16px] text-[#6b7177] mt-4">Add features and functionality to your business with 6,000+ apps that integrate directly with Shopify.</p>
+                    <button class="move-arrow text-[16px] font-bold text-[#004c3f] mt-4">Visit the Shopify App Store  <i class="fa-solid fa-arrow-right-long" style="font-size: 13px;"></i></button>
+                </div>
+                <div class="w-[330px]">
+                    <h3 class="text-[18px] text-[#212326]">Shopify Experts Marketplace</h3>
+                    <p class="text-[16px] text-[#6b7177] mt-4">Hire a Shopify expert to help you with everything from store setup to SEO.</p>
+                    <button class="move-arrow text-[16px] font-bold text-[#004c3f] mt-4">Explore the Shopify Experts Marketplace  <i class="fa-solid fa-arrow-right-long" style="font-size: 13px;"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="md:w-[50%]">
+            <img src="./assets/helpShopify.webp" alt="" class="h-[666px] w-[760px]">
+        </div>
+    </div>
+
+    <div class="business-journey md:my-24 text-center relative">
+        <h1 class="text-[#212326] text-[30px]">Start your business journey with Shopify</h1>
+        <p class="text-[#6b7177] text-[18px] mt-4 md:w-[45%] mx-auto">Try Shopify for free, and explore all the tools and services you need to start, run, and grow your business.</p>
+        <button class="bg-[#008060] mt-8 text-white px-[30px] py-[13px] rounded-md shadow-[0_0px_15px_0px_rgba(0,0,0,0.3)] hover:shadow-[0_0px_25px_0px_rgba(0,0,0,0.3)] hover:bg-[#004c3f]">Start free trial</button>
+        <button class="to-top text-[16px] font-bold text-[#004c3f] absolute right-20 bottom-[-60px]">Back to top  <i class="fa-solid fa-arrow-up-long" style="font-size: 13px;"></i></button>
+    </div>
     
 </body>
 <script>
